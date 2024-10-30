@@ -15,9 +15,19 @@ import { UserListComponent } from './user-list/user-list.component';
   imports:[RouterOutlet, UserRegisterComponent, UserListComponent],
 })
 export class AppComponent {
-  users: { nombre: string; apellidos: string }[] = [];
+  users: { identificacion: string;
+    nombre: string;
+    apellidos: string;
+    email: string;
+    celular: string;
+    direccion: string; }[] = [];
 
-  onUserCreated(user: { nombre: string; apellidos: string }) {
+  onUserCreated(user: { identificacion: string;
+    nombre: string;
+    apellidos: string;
+    email: string;
+    celular: string;
+    direccion: string; }) {
     this.users.push(user);
   }
 }
