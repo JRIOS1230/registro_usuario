@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## pruebas unitarias 
+
+fueron realizadas con Karma y Jazmine
+
+## Para mas información 
+
+Este proyecto esta en la ruta de mi git hub [https://github.com/JRIOS1230/registro_usuario.git], en donde se proporciona codigo, pruebas y demas del mismo, recuerden tener en cuenta que se realizo con las ultima versión de angular (18.2.10) y node(^18.18.0)
