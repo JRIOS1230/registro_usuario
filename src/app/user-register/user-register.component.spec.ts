@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { UserService } from '../user.service';
 import { FormsModule } from '@angular/forms';
 import { of } from 'rxjs';
-import { HttpClientTestingModule } from '@angular/common/http/testing'; // Importa el módulo de pruebas de HTTP
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('UserRegisterComponent', () => {
   let component: UserRegisterComponent;
@@ -19,8 +19,8 @@ describe('UserRegisterComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         FormsModule,
-        HttpClientTestingModule, // Asegúrate de incluir este módulo si haces peticiones HTTP
-        UserRegisterComponent // Importa UserRegisterComponent como standalone
+        HttpClientTestingModule,
+        UserRegisterComponent
       ],
       providers: [
         { provide: UserService, useValue: userService },

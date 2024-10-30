@@ -1,17 +1,17 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing'; // Importa RouterTestingModule
+import { RouterTestingModule } from '@angular/router/testing'; 
 import { AppComponent } from './app.component';
-import { UserRegisterComponent } from './user-register/user-register.component'; // Importa UserRegisterComponent
-import { UserListComponent } from './user-list/user-list.component'; // Importa UserListComponent
+import { UserRegisterComponent } from './user-register/user-register.component'; 
+import { UserListComponent } from './user-list/user-list.component'; 
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule, // Usa RouterTestingModule para manejar rutas
-        UserRegisterComponent, // Importa UserRegisterComponent
-        UserListComponent, // Importa UserListComponent
-        AppComponent // Importa AppComponent
+        RouterTestingModule,
+        UserRegisterComponent, 
+        UserListComponent,
+        AppComponent 
       ],
     }).compileComponents();
   });

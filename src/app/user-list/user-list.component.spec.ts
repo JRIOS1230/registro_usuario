@@ -37,13 +37,13 @@ describe('UserListComponent', () => {
     // Orden ascendente
     component.sortAsc = true;
     component.sortUsers();
-    expect(component.users[0].nombre).toBe('Alice'); // Ahora esperamos 'Alice' primero
+    expect(component.users[0].nombre).toBe('Alice');
     expect(component.users[1].nombre).toBe('Bob');
 
     // Orden descendente
     component.sortAsc = false;
     component.sortUsers();
-    expect(component.users[0].nombre).toBe('Bob'); // Ahora esperamos 'Bob' primero
+    expect(component.users[0].nombre).toBe('Bob');
     expect(component.users[1].nombre).toBe('Alice');
   });
 });

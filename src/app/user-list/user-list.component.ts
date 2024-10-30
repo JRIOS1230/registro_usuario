@@ -3,7 +3,7 @@ import { UserService } from '../user.service';
 import { CommonModule } from '@angular/common';
 
 export interface User {
-  identificacion: string; // Agrega este campo para reflejar la información del registro
+  identificacion: string;
   nombre: string;
   apellidos: string;
   email: string;
@@ -32,7 +32,6 @@ export class UserListComponent {
   }
 
   ngOnInit() {
-    // Opcional: puedes inicializar otras configuraciones si es necesario
   }
 
   // Método para añadir un usuario a la lista
