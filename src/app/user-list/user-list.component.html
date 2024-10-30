@@ -1,0 +1,11 @@
+<div>
+  <h2>Lista de Usuarios</h2>
+  <button (click)="toggleSortOrder()">
+    Ordenar {{ sortAsc ? 'Z-A' : 'A-Z' }}
+  </button>
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user.apellidos }} {{ user.nombre }} - {{ user.email }}
+    </li>
+  </ul>
+</div>

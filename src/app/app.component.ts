@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
+import { UserRegisterComponent } from "./user-register/user-register.component";
+import { UserListComponent } from './user-list/user-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  template:`
+    <router-outlet></router-outlet>
+  `,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports:[RouterOutlet, UserRegisterComponent, UserListComponent],
 })
 export class AppComponent {
-  title = 'registro_usuario';
+  users: { nombre: string; apellidos: string }[] = [];
+
+  onUserCreated(user: { nombre: string; apellidos: string }) {
+    this.users.push(user);
+  }
 }
